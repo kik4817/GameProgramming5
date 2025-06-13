@@ -127,40 +127,32 @@ int main()
 		{
 			monsters.emplace_back(sx, sy, path);
 		}
+
+		for (int i = 0; i < monsters.size();i++)
+		{
+			Monster& monster = monsters[i];
+
+			if (monster.step >= monster.direction.size()) continue;
+			// 잔상이 남는 현상을 래결해보세요 system("cls")
+			// pre_x, pre_y; 이전 위치값을 저장하고, 이전 위치를 빈 공간으로 그리는 코드
+			// std::cout<<"  "
+
+			GoToXY(monster.prev_x, monster.prev_y);
+			std::wcout << " ";
+
+			int dir = monster.direction[monster.step];
+			monster.x += dx[dir];
+			monster.y += dy[dir];
+			monster.prev_x = monster.x;
+			monster.prev_y = monster.y;
+			monster.step++;
+
+			GoToXY(monster.x, monster.y);
+			std::cout << "M";
+			Sleep(500);
+		}
 	}	
-
-	GoToXY(sx, sy);
-	std::cout << "M";
-
-	// direction 숫자를 받아와서 GotoXY의 좌표를 변경해보세요
-
-	int pre_x = sx;
-	int pre_y = sy;
-
-	for (int i = 0; i < monsters.size();i++)
-	{
-		Monster& monster = monsters[i];
-
-		if (monster.step >= monster.direction.size()) continue;
-		// 잔상이 남는 현상을 래결해보세요 system("cls")
-		// pre_x, pre_y; 이전 위치값을 저장하고, 이전 위치를 빈 공간으로 그리는 코드
-		// std::cout<<"  "
-
-		GoToXY(monster.prev_x, monster.prev_y);
-		std::wcout << " ";
-
-		int dir = monster.direction[monster.step];
-		monster.x += dx[dir];
-		monster.y += dy[dir];
-		monster.prev_x = monster.x;
-		monster.prev_y = monster.y;
-		monster.step++;
-
-		GoToXY(monster.x, monster.y);
-		std::cout << "M";
-		Sleep(500);
-	}
-
+	
 // 2. 여러가지 몬스터가 각자의 방향으로 움직이는 코드를 작성해보세요
 
 

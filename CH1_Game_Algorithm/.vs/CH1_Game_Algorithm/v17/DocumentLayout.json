@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15280516-DCF1-4F62-B093-7199FB4E0FED}|CH02_Basic_Sorting\\CH02_Basic_Sorting.vcxproj|C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\CH02_Basic_Sorting\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{15280516-DCF1-4F62-B093-7199FB4E0FED}|CH02_Basic_Sorting\\CH02_Basic_Sorting.vcxproj|solutionrelative:CH02_Basic_Sorting\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +27,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\CH02_Basic_Sorting\\main.cpp",
+              "RelativeDocumentMoniker": "CH02_Basic_Sorting\\main.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\CH02_Basic_Sorting\\main.cpp",
+              "RelativeToolTip": "CH02_Basic_Sorting\\main.cpp",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-13T08:50:09.973Z",
+              "EditorCaption": ""
             }
           ]
         }
