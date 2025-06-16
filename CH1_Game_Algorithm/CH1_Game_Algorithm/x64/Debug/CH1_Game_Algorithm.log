@@ -1,5 +1,6 @@
-﻿  main.cpp
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: 중간 디렉터리(x64\Debug\)에 다른 프로젝트(CH1_Game_Algorithm.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  main.cpp
 C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH1_Game_Algorithm\main.cpp(57,16): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
 C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH1_Game_Algorithm\main.cpp(57,18): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
 C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH1_Game_Algorithm\main.cpp(119,12): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  CH1_Game_Algorithm.vcxproj -> C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\x64\Debug\CH1_Game_Algorithm.exe
+  CH1_Game_Algorithm.vcxproj -> C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\x64\Debug\CH01_Game_Algorithm.exe

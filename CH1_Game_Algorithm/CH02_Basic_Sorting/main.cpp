@@ -180,11 +180,6 @@ void SelectionSort(int arr[], int n)
 		{
 			std::swap(arr[i], arr[min_idx]);
 		}
-
-		for (int i = 0; i < n;i++)
-		{
-			std::cout << arr[i] << " ";
-		}
 	}
 }
 
@@ -195,13 +190,31 @@ void SelectionSort(int arr[], int n)
 //	{
 //		for (int j = i + 1;j < n;j++)
 //		{
-//			if()
+//			if (num[j] > num[j + 1])
+//			{
+//				std::swap(num[j], num[j + 1]);
+//			}
+//
+//			for (int i = 0; i < n;i++)
+//			{
+//				std::cout << num[i] << " ";
+//			}		
+//		}
+//
+//		for (int i : nums)
+//		{
+//			std::cout << i << " ";
+//
 //		}
 //	}
+//}
+
 
 #pragma endregion
 
 #pragma region »ðÀÔ Á¤·Ä
+
+
 
 #pragma endregion
 
