@@ -121,35 +121,35 @@ void quickSort(int data[], int start, int end)
 	int temp;          // swap 사용하기 위한 임시 변수
 
 	while (i <= j) // 왼쪽 인덱스가 오른쪽 인데스가 추월 했을 때 까지 반복
-	{		
-		while(data[i] <= data[pivot]) // 피벗보다 큰 값을 만날 때 (i의 값을 변경해주는 코드)
+	{
+		while (data[i] <= data[pivot]) // 피벗보다 큰 값을 만날 때 (i의 값을 변경해주는 코드)
 		{
 			//(작을 때 계속 i를 증가해라)
 			i++;
 		}
-		while (j> start && data[j] >= data[pivot]) // 피벗보다 작은 값을 만날때 (j의 값을 변경해주는 코드)
+		while (j > start && data[j] >= data[pivot]) // 피벗보다 작은 값을 만날때 (j의 값을 변경해주는 코드)
 		{
 			//(j의 값을 변경해주는 코드)
 			j--;
 		}
-	}
 
-	// i > j // 왼쪽 인덱스가 오른쪽 인덱스 보다 크면 (엇갈렸다)
-	if (i > j)
-	{
-		temp = data[j];
-		data[j] = data[i];
-		data[i] = temp;
+		// i > j // 왼쪽 인덱스가 오른쪽 인덱스 보다 크면 (엇갈렸다)
+		if (i > j)
+		{
+			temp = data[j];
+			data[j] = data[pivot];
+			data[pivot] = temp;
 
-		//std::swap(data[pivot], data[j]);
-	}
-	else // 엇갈리지 않았을 때
-	{
-		temp = data[j];
-		data[j] = data[i];
-		data[i] = temp;
+			//std::swap(data[pivot], data[j]);
+		}
+		else // 엇갈리지 않았을 때
+		{
+			temp = data[j];
+			data[j] = data[i];
+			data[i] = temp;
 
-		//std::swap(data[i], data[j]);
+			//std::swap(data[i], data[j]);
+		}
 	}
 
 	// 재귀 함수
@@ -159,35 +159,54 @@ void quickSort(int data[], int start, int end)
 	quickSort(data, j+1, end);   // 오른쪽
 }
 
-void quickSort(std::vector<int>& data, int start, int end)
-{
-	if (start >= end)
-	{
-		return;
-	}
+/*
+* 내림차순 버젼으로 퀵 정렬을 구현을 해보세요
+* 왼쪽과 오른쪽을 비교하는 코드를 (오른차순 : 왼쪽이 작은수) (내림차순 : 왼쪽이 큰 수)
+*/
 
-	int n = data.size();
-	int pivot = start;
-	int i = start + 1;
-	int j = end;
 
-	while (i <= j)
-	{
-		while (data[i] <= data[pivot])
-		{
-			i++;
-		}
-		while (j > start && data[j] >= data[pivot])
-		{
-			j--;
-		}
-
-		if (i > j)
-		{
-			std::swap()
-		}
-	}
-}
+//void quickSort(std::vector<int>& data, int start, int end)
+//{
+//	if (start >= end)
+//	{
+//		return;
+//	}
+//		
+//	int pivot = start;
+//	int i = start + 1;
+//	int j = end;
+//	int temp;
+//
+//	while (i <= j)
+//	{
+//		while (data[i] >= data[pivot])
+//		{
+//			i++;
+//		}
+//		while (j > start && data[j] <= data[pivot])
+//		{
+//			j--;
+//		}
+//
+//		if (i > j)
+//		{
+//			temp = data[j];
+//			data[j] = data[pivot];
+//			data[pivot] = temp;
+//			//std::swap(data[pivot], data[j]);
+//		}
+//		else
+//		{
+//			temp = data[j];
+//			data[j] = data[i];
+//			data[i] = temp;
+//			//std::swap(data[i], data[j]);
+//		}
+//	}
+// 
+//	quickSort(data, start, j - 1);
+//	quickSort(data, j + 1, end);
+//}
 
 
 #pragma endregion
@@ -228,14 +247,14 @@ void Test2()
 		std::cout << arr2[i] << " ";
 	}
 
-	std::cout << "\n\n퀵 정렬 vector 형식" << std::endl;
-	std::vector<int> nums2 = { 3,5,9,1,2,4,6,8,7,0 };
-	InsetSort(nums2);
+	//std::cout << "\n\n퀵 정렬 vector 형식" << std::endl;
+	//std::vector<int> nums2 = { 3,5,9,1,2,4,6,8,7,0 };
+	//quickSort(nums2, 0, nums2.size(), 9);
 
-	for (int num : nums2)
-	{
-		std::cout << num << " ";
-	}
+	//for (int num : nums2)
+	//{
+	//	std::cout << num << " ";
+	//}
 }
 
 #pragma endregion
