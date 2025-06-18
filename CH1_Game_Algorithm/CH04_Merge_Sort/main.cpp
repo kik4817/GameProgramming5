@@ -46,21 +46,21 @@ void quicksort(std::vector<int>& data, int start, int end)
 
 void BackJun()
 {
-	int n;
-	std::cin >> n;
+	//int n;
+	//std::cin >> n;
 
-	std::vector<int> list;
-	list.assign(n, 0);
+	//std::vector<int> list;
+	//list.assign(n, 0);
 
-	for (int i = 0; i < n;i++)
-	{
-		std::cin >> list[i];
-	}
+	//for (int i = 0; i < n;i++)
+	//{
+	//	std::cin >> list[i];
+	//}
 
-	for (int i = 0;i < n;i++)
-	{
-		std::cout << list[i] << std::endl;
-	}
+	//for (int i = 0;i < n;i++)
+	//{
+	//	std::cout << list[i] << std::endl;
+	//}
 
 	//std::vector<int> list = { 3,5,9,1,2,4,6,8,7,0 };
 	//quicksort(list, 0, list.size(), 9);
@@ -76,6 +76,8 @@ void BackJun()
 
 int main()
 {
+	//BackJun();
+
 	std::cout << "\n병합 정렬 배열 버전" << std::endl;
 	int arr[6] = { 3,2,5,1,4,0 };
 	mergesort(arr, 6, 0, 5);
