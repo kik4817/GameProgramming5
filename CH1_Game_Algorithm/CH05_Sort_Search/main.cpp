@@ -38,6 +38,19 @@
 * // 유저의 ID에 유저가 가진 정보를 저장합니다. 서버에 유저의 ID를 기준으로 해당 유저의 정보를 검색하는 기능을 구현해보세요.
 */
 
+/*
+* ★★★ 탐색과 자료구조를 연관해서 생각해보기 ★★★
+* - vector : 선형탐색, 이진탐색
+*  - 조건 : 사용하는 컨테이너가 정렬이 되어 있어야한다.
+*   - 사용 중인 컨테이너의 특징 : 임의의 값 바로 접근, 랜점한 값을 수정할 때 비효율적이다.
+* 
+* - list : 랜덤한 값의 수정을 즉시 할 수 있다. 
+*  - mid index의 값과 target비교 
+*   - 0 -> mid 순차적으로 탐색 후 mid 값을 변환한다.
+* 단점 : logN시간을 확보했지만, 사용하기 위한 자료구조가 적합하지 않다.
+* 연관 컨테이너 : set, map // 트리 구조로 구현이 되어있다.
+*/
+
 template<typename T1, typename T2>
 struct myPair
 {
@@ -211,15 +224,43 @@ void Example()
 	* 2. LinearSearch(vector<int> -> vector<pair<int, string> 버전으로 변경해보세요
 	* 3. UserID를 사용해서 유저의 닉네임을 출력하는 코드를 완성해보세요
 	*/
-
-	
-
 }	
 
-void UserDataSearch(std::vector<std::pair<int, std::string>>data, int userID)
+bool UserDataSearch(std::vector<std::pair<int, std::string>>data, int userID)
 {
-	// 검색 반환
+	// 검색 반환 + pair 클래스 중복해서 코드를 표현할 수 있는가?
+	// 선형 탐색
+	
+	for (int i = 0; i < data.size(); i++)
+	{
+		if (data[i].first == userID)
+		{
+			std::cout << "닉네임 : " << data[i].second << std::endl;
+			return true;
+		}
+	}
 
+	std::cout << "유저 아이디에 해당하는 아이디가 없습니다." << std::endl;
+	return false;
+		
+}
+
+void Example2()
+{
+	std::cout << "유저 아이디로 닉네임 검색한기 예제" << std::endl;
+	std::vector<std::pair<int, std::string>> data2;
+	data2.push_back({ 0,"AAA" });
+	data2.push_back({ 1,"BBB" });
+	data2.push_back({ 2,"CCC" });
+	data2.push_back({ 3,"DDD" });
+	data2.push_back({ 4,"EEE" });
+	if (UserDataSearch(data2, 3)) // 해당하는 유저아이디가 존재한다면
+	{
+		// 무엇을 해야 할까? data2[3] -> 변경하는 코드를 작성할 수 있다.
+		// 닉네임을 변경하세요. // 비밀번호를 입력하고 해당 닉네임으로 로그인한다.
+
+		data2[3].second = "FFF";
+	}
 }
 
 int main()
@@ -248,4 +289,7 @@ int main()
 
 	std::cout << " " << std::endl;
 	Example();
+
+	std::cout << " " << std::endl;
+	Example2();
 }

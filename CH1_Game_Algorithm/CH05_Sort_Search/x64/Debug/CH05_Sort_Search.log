@@ -1,4 +1,15 @@
 ﻿  main.cpp
-C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH05_Sort_Search\main.cpp(83,8): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH05_Sort_Search\main.cpp(167,8): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  CH05_Sort_Search.vcxproj -> C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\x64\Debug\CH05_Sort_Search.exe
+C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH05_Sort_Search\main.cpp(88,8): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH05_Sort_Search\main.cpp(172,8): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH05_Sort_Search\main.cpp(175,10): error C2065: 'mid': 선언되지 않은 식별자입니다.
+C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH05_Sort_Search\main.cpp(180,15): error C2065: 'mid': 선언되지 않은 식별자입니다.
+C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH05_Sort_Search\main.cpp(182,46): error C2065: 'mid': 선언되지 않은 식별자입니다.
+C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH05_Sort_Search\main.cpp(182,3): error C2661: 'BinarySearchByRecursive': 오버로드된 함수에서 3개의 인수를 사용하지 않습니다.
+      C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH05_Sort_Search\main.cpp(182,3):
+      인수 목록 '(std::vector<int,std::allocator<int>>, int, int)'을(를) 일치시키는 동안
+  
+C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH05_Sort_Search\main.cpp(186,40): error C2065: 'mid': 선언되지 않은 식별자입니다.
+C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH05_Sort_Search\main.cpp(186,3): error C2661: 'BinarySearchByRecursive': 오버로드된 함수에서 3개의 인수를 사용하지 않습니다.
+      C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH05_Sort_Search\main.cpp(186,3):
+      인수 목록 '(std::vector<int,std::allocator<int>>, int, int)'을(를) 일치시키는 동안
+  
