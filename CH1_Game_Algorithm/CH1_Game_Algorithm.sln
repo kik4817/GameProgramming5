@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CH05_Sort_Search", "CH05_So
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CH06_Tree", "CH06_Tree\CH06_Tree.vcxproj", "{FC18AB59-8310-409C-9E4C-CEB048A6EDE6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CH07_KTHFind", "CH07_KDFind\CH07_KDFind.vcxproj", "{31207530-DF77-4F62-A8DE-5B78DF02100E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{FC18AB59-8310-409C-9E4C-CEB048A6EDE6}.Release|x64.Build.0 = Release|x64
 		{FC18AB59-8310-409C-9E4C-CEB048A6EDE6}.Release|x86.ActiveCfg = Release|Win32
 		{FC18AB59-8310-409C-9E4C-CEB048A6EDE6}.Release|x86.Build.0 = Release|Win32
+		{31207530-DF77-4F62-A8DE-5B78DF02100E}.Debug|x64.ActiveCfg = Debug|x64
+		{31207530-DF77-4F62-A8DE-5B78DF02100E}.Debug|x64.Build.0 = Debug|x64
+		{31207530-DF77-4F62-A8DE-5B78DF02100E}.Debug|x86.ActiveCfg = Debug|Win32
+		{31207530-DF77-4F62-A8DE-5B78DF02100E}.Debug|x86.Build.0 = Debug|Win32
+		{31207530-DF77-4F62-A8DE-5B78DF02100E}.Release|x64.ActiveCfg = Release|x64
+		{31207530-DF77-4F62-A8DE-5B78DF02100E}.Release|x64.Build.0 = Release|x64
+		{31207530-DF77-4F62-A8DE-5B78DF02100E}.Release|x86.ActiveCfg = Release|Win32
+		{31207530-DF77-4F62-A8DE-5B78DF02100E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
