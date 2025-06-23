@@ -22,6 +22,7 @@ void EmergencyExample()
 	std::vector<int> people = { 10,5,7,25,4,27,9 };
 
 	std::vector<int> answer;
+
 	answer.assign(people.size(), 0);
 	
 	//answer.push_back() // 인덱스값에 +1 들어간다.
@@ -37,7 +38,7 @@ void EmergencyExample()
 
 	for (int i = 0; i < people.size();i++)
 	{
-		sheets.insert({ i,people[i] });
+		sheets.insert({ people[i], i }); // 위급도 key, 인덱스 second(value)
 	}
 
 	// people 정렬
@@ -65,10 +66,9 @@ void EmergencyExample()
 
 	for (int i = 0;i < people.size();i++)
 	{
-
 		auto it = sheets.find(people[people.size() - 1-i]);
-		int key = it->first;
-		answer[key] = i + 1;
+		int index = it->second;
+		answer[index] = i + 1;
 	}
 
 	//answer = people;

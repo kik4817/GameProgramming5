@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{866EDF7A-CC6A-46F9-B1B5-F1B58E9F02BD}|CH08_Heap\\CH08_Heap.vcxproj|C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\CH08_Heap\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{866EDF7A-CC6A-46F9-B1B5-F1B58E9F02BD}|CH08_Heap\\CH08_Heap.vcxproj|solutionrelative:CH08_Heap\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31207530-DF77-4F62-A8DE-5B78DF02100E}|CH07_KDFind\\CH07_KDFind.vcxproj|C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\CH07_KDFind\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{31207530-DF77-4F62-A8DE-5B78DF02100E}|CH07_KDFind\\CH07_KDFind.vcxproj|solutionrelative:CH07_KDFind\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +31,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\CH07_KDFind\\main.cpp",
+              "RelativeDocumentMoniker": "CH07_KDFind\\main.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\CH07_KDFind\\main.cpp",
+              "RelativeToolTip": "CH07_KDFind\\main.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-23T07:16:25.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\CH08_Heap\\main.cpp",
+              "RelativeDocumentMoniker": "CH08_Heap\\main.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\CH08_Heap\\main.cpp",
+              "RelativeToolTip": "CH08_Heap\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-23T06:54:41.783Z",
+              "EditorCaption": ""
             }
           ]
         }
