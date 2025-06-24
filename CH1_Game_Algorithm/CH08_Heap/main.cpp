@@ -69,7 +69,7 @@ private:
 
 		// node->parentNode 없을 때
 
-		while (node->value > node->parentNode->value && node->parentNode != nullptr) // 변경을 하기 위한 조건
+		while (node->parentNode != nullptr && node->value > node->parentNode->value) // 변경을 하기 위한 조건
 		{
 			// 알고리즘 헤더를 추가해준다음에, 부모 노드와 자기 노드를 swap해준다
 			// swap후에 node를 부모 노드와 변경해준다. (부모 노드를 가리키고 있는 것을 변경한다.)
@@ -114,7 +114,7 @@ private:
 
 			if (node->leftNode && node->leftNode->value > largest->value)
 			{
-				largest == node->leftNode;
+				largest = node->leftNode;
 			}
 
 			if (node->rightNode && node->rightNode->value > largest->value)
@@ -123,7 +123,7 @@ private:
 			}
 
 			// 왼쪽과 오른쪽 중에서 큰 수로 바뀐다.
-			if (largest == node) // 만약에 변경이 안됐으면
+			if (largest = node) // 만약에 변경이 안됐으면
 			{
 				break;
 			}
@@ -234,8 +234,39 @@ public:
 		}
 	}
 
-	// 현제 들어가 노드와, 그 부모의 노드를 비교해서 큰 수를 위쪽으로 보내라.
-	//heapIfyup();
+	std::vector<int> toArray()
+	{
+		std::vector<int> result;
+
+		// 힙으로 저장한 자료구조를 vector로 변환해보세요
+		// while queue자료형을 사용해서 데이터를 탐색하는 현태의 코드
+
+		if (root) return result; // 예외처리
+
+		std::queue<Node*> q;
+		q.push(root); // root가 nullptr
+
+		while (!q.empty())
+		{
+			Node* node = q.front();
+			q.pop();
+			result.push_back(node->value);
+
+			if (node->leftNode);
+			{
+				q.push(node->leftNode);
+			}
+
+			if (node->rightNode);
+			{
+				q.push(node->rightNode);
+			}
+
+		}
+
+		return result;
+	}
+
 
 };
 
@@ -283,13 +314,24 @@ int main()
 	mxHeap.insert(5);
 	mxHeap.insert(11);
 
+	std::cout << "Heap자료구조의 트리 저장 순서대로 출력하는 예제" << std::endl;
+	std::vector<int> tempV = mxHeap.toArray();
+
+	for (auto& data : tempV)
+	{
+		std::cout << data << " ";
+	}
+
 	std::cout << "가장 큰 수를 반환하고 다시 Heap 정렬 하는 예제" << std::endl;
 	int maxValue = mxHeap.extractMax(); // 1번째 큰 수
+	int k = 2;
 	int kthValue;
-	for (int i = 0;i < 2;i++)
+	for (int i = 0;i < k - 1;i++)
 	{
 		kthValue = mxHeap.extractMax(); // 2번째로 큰 수 kthValue 저장된다.
 	}
 
-	k번째 가장 큰 수
+	// k번째 큰 수를 찾아라
+
+	std::cout << "k번째로 큰 수는 : " << kthValue << std::endl;
 }
