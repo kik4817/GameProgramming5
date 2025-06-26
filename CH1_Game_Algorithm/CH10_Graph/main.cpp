@@ -61,6 +61,23 @@ using namespace std;
 * 점과 선을 그래프로 표현하는 것을 아무 주제나 선택해보세요. 실행해보세요
 */
 
+/*
+* 그래프의 탐색 방법(순회)
+* 
+* - DFS 깊이 우선 탐색 
+*	- Stack구현 : 세로
+*
+* - BFS 너비 우선 탐색
+*	- Queue구현 : 가로
+*/
+
+/*
+* 언제 DFS와 BFS를 사용할 수 있는가?
+* - (1) 그래프를 탐색할 때 쉽게 구현할 수 있는 것을 선택하세요.(둘 다 사용할 수 있다.)
+* - (2) DFS - 그래프가 순회를 하고 있는지 파악할 때
+* - (3) BFS - 특정 위치 까지 최소의 거리로 도달하는 방법을 구할 때
+*/
+
 class Graph
 {
 	int V; // 점의 갯수 (도시, 노드)
@@ -101,7 +118,7 @@ class Graph
 			if (!visited[cVertex] == false)
 			{
 				visited[cVertex] == true;
-				cout << v << " ";
+				cout << cVertex << " ";
 				
 			}
 
@@ -125,6 +142,63 @@ class Graph
 			//	}
 			//}			
 		}
+	}
+
+	void BFSIter(int start)
+	{
+		queue<int> q;
+		visited[start] = true;
+		q.push(start); // 그래프의 시작 노드를 삽입
+
+		while (!q.empty())
+		{
+			int c = q.front();
+			q.pop();
+
+			cout << c << " ";
+
+			// c에 연결되어 있는 노드를 접근하는 코드 adj[c]
+			for (int& e : adj[c])
+			{
+				if (!visited[e])
+				{
+					visited[e] = true;
+					q.push(e);
+				}
+			}
+		}
+	}
+
+	void BFSRecursive(queue<int>& q)
+	{
+		// 1. 재귀 함수의 탈출 조건을 작성해보세요 (q가 empty일때)
+		// BFS 반복방식의 코드를 여기에 가져와보세요
+		if (q.empty()) { return; }
+
+		// front, pop, push
+
+		int c = q.front();
+		q.pop();
+		cout << c << " ";
+
+		for (int& e : adj[c])
+		{
+			if (!visited[e])
+			{
+				visited[e] = true;
+				q.push(e);
+			}
+		}
+
+		BFSRecursive(q);
+	}
+
+	void BFS(int start)
+	{
+		queue<int> q;
+		q.push(start);
+		visited[start] = true;
+		BFSRecursive(q);
 	}
 
 public:
@@ -160,7 +234,7 @@ public:
 		// 방문한 경험을 리셋시킨다.
 		fill(visited.begin(), visited.end(), false);
 
-		cout << "DFS 재귀 탐색 결과 (시작 지점 : " << startV << ")";
+		cout << "DFS 재귀 방식 탐색 결과 (시작 지점 : " << startV << ")" << endl;
 		DFS(startV);
 		cout << endl;
 	}
@@ -169,8 +243,26 @@ public:
 	{
 		fill(visited.begin(), visited.end(), false);
 
-		cout << "DFS Iterative 탐색 결과 (시작 지점 : " << startV << ")";
+		cout << "DFS Iterative 방식 탐색 결과 (시작 지점 : " << startV << ")" << endl;
 		DFS(startV);
+		cout << endl;
+	}
+
+	void BFSIterTraverse(int startV)
+	{
+		fill(visited.begin(), visited.end(), false); // 방문 경험을 초기화 하는 코드
+
+		cout << "BFS Iterative 방식 탐색 결과 (시작 지점 : " << startV << ")" << endl;
+		BFSIter(startV);
+		cout << endl;
+	}
+
+	void BFSTraverse(int startV)
+	{
+		fill(visited.begin(), visited.end(), false);
+
+		cout << "BFS 재귀 방식 탐색 결과 (시작 지점 : " << startV << ")" << endl;
+		BFS(startV);
 		cout << endl;
 	}
 };
@@ -206,14 +298,25 @@ public:
 
 int main()
 {
-	Graph g(4);
+	Graph g(6);
+	//g.addEdge(0, 1);
+	//g.addEdge(0, 2);
+	//g.addEdge(0, 3);
+	//g.addEdge(1, 2);
+	//g.addEdge(1, 3);
+	//----------------
 	g.addEdge(0, 1);
 	g.addEdge(0, 2);
-	g.addEdge(0, 3);
-	g.addEdge(1, 2);
 	g.addEdge(1, 3);
+	g.addEdge(2, 4);
+	g.addEdge(2, 5);
 	g.DFSTraverse(3);
 	g.DFSIterTraverse(3);
+	g.BFSIterTraverse(0);
+	g.BFSTraverse(0);
+
+	cout << endl;
+
 	g.PrintGraph();
 
 	cout << endl;

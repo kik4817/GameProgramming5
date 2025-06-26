@@ -1,4 +1,4 @@
 ﻿  main.cpp
-C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH10_Graph\main.cpp(103,22): warning C4553: '==': 식의 결과가 사용되지 않습니다. '='을(를) 의도했습니까?
-C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH10_Graph\main.cpp(109,15): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH10_Graph\main.cpp(120,22): warning C4553: '==': 식의 결과가 사용되지 않습니다. '='을(를) 의도했습니까?
+C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\CH10_Graph\main.cpp(126,15): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   CH10_Graph.vcxproj -> C:\Users\Administrator\Desktop\GameProgramming5\CH1_Game_Algorithm\x64\Debug\CH10_Graph.exe
