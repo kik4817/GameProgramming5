@@ -168,27 +168,27 @@ public:
 					levels.push_back(nextLevel);
 				}
 				currentLevel++; // 다음 층을 계산하세요
-			}
-
-			// 모든 층의 레벨을 계산을 했으면, 각 노드가 몇 층에 있고, 몇 번째에 있는지 기록이 됩니다.
-			for (int level = 0; level < levels.size(); level++) // 0층 ~ 마지막 층 반복
-			{
-				int nodeLevel = levels[level].size(); // 각 층의 방의 갯수
-				int spacing = CONSOLEWIDTH / (nodeLevel + 1); // const ConsoleWIDTH(가로) = 80
-
-				for (int i = 0; i < nodeLevel; i++)
+				// 모든 층의 레벨을 계산을 했으면, 각 노드가 몇 층에 있고, 몇 번째에 있는지 기록이 됩니다.
+				for (int level = 0; level < levels.size(); level++) // 0층 ~ 마지막 층 반복
 				{
-					int nodeId = levels[level][i]; // n층 n번째 노드 = id
-					nodes[nodeId].x = spacing * (i + 1); // i가 0부터 시작하기 때문에 1을 더한다.
-					nodes[nodeId].y = level * 2 + 2; // 각 층의 여백 크기를 설정한다.
+					int nodeLevel = levels[level].size(); // 각 층의 방의 갯수
+					int spacing = CONSOLEWIDTH / (nodeLevel + 1); // const ConsoleWIDTH(가로) = 80
+
+					for (int i = 0; i < nodeLevel; i++)
+					{
+						int nodeId = levels[level][i]; // n층 n번째 노드 = id
+						nodes[nodeId].x = spacing * (i + 1); // i가 0부터 시작하기 때문에 1을 더한다.
+						nodes[nodeId].y = level * 2 + 2; // 각 층의 여백 크기를 설정한다.
+					}
 				}
 			}
+
 		}
 		void DrawCircle(vector<vector<char>>& screen, int x, int y, int nodeId)
 		{
 			screen[y][x] = '0';
 		}
-		void DrawLine(vector<vector<char>>& screen, int x1, int x2, int y1, int y2) // 정수 사이의 픽셀 선을 그리는 알고리즘 Bresenham
+		void DrawLine(vector<vector<char>>& screen, int x1, int y1, int x2, int y2) // 정수 사이의 픽셀 선을 그리는 알고리즘 Bresenham
 		{
 			int dx = abs(x2 - x1);
 			int dy = abs(y2 - y1);
@@ -255,6 +255,7 @@ public:
 				{
 					cout << screen[y][x];
 				}
+				cout << endl;
 			}
 			cout << endl;
 		}
