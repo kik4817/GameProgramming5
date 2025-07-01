@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{AE0BE728-E5FE-4093-9CCA-1700CCEC8B42}|CH13_DP\\CH13_DP.vcxproj|C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\CH13_DP\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AE0BE728-E5FE-4093-9CCA-1700CCEC8B42}|CH13_DP\\CH13_DP.vcxproj|solutionrelative:CH13_DP\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,19 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\CH13_DP\\main.cpp",
-              "RelativeDocumentMoniker": "CH13_DP\\main.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GameProgramming5\\CH1_Game_Algorithm\\CH13_DP\\main.cpp",
-              "RelativeToolTip": "CH13_DP\\main.cpp",
-              "ViewState": "AgIAAKAAAAAAAAAAAAAkwL4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-30T07:03:37.146Z",
-              "EditorCaption": ""
             }
           ]
         }
