@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CH14_Greedy", "CH14_Greedy\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CH15", "CH15\CH15.vcxproj", "{EE0AF8BB-902E-408A-959A-B03B8EDEE582}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CH16_GameUI", "CH16_GameUI\CH16_GameUI.vcxproj", "{057621F6-EDC1-410B-BFA4-DA1160D5E319}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -161,6 +163,14 @@ Global
 		{EE0AF8BB-902E-408A-959A-B03B8EDEE582}.Release|x64.Build.0 = Release|x64
 		{EE0AF8BB-902E-408A-959A-B03B8EDEE582}.Release|x86.ActiveCfg = Release|Win32
 		{EE0AF8BB-902E-408A-959A-B03B8EDEE582}.Release|x86.Build.0 = Release|Win32
+		{057621F6-EDC1-410B-BFA4-DA1160D5E319}.Debug|x64.ActiveCfg = Debug|x64
+		{057621F6-EDC1-410B-BFA4-DA1160D5E319}.Debug|x64.Build.0 = Debug|x64
+		{057621F6-EDC1-410B-BFA4-DA1160D5E319}.Debug|x86.ActiveCfg = Debug|Win32
+		{057621F6-EDC1-410B-BFA4-DA1160D5E319}.Debug|x86.Build.0 = Debug|Win32
+		{057621F6-EDC1-410B-BFA4-DA1160D5E319}.Release|x64.ActiveCfg = Release|x64
+		{057621F6-EDC1-410B-BFA4-DA1160D5E319}.Release|x64.Build.0 = Release|x64
+		{057621F6-EDC1-410B-BFA4-DA1160D5E319}.Release|x86.ActiveCfg = Release|Win32
+		{057621F6-EDC1-410B-BFA4-DA1160D5E319}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
